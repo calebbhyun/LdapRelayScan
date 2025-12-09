@@ -127,8 +127,8 @@ if __name__ == "__main__":
     parser.add_argument("-method", choices=["LDAPS", "BOTH"], default="LDAPS")
     parser.add_argument("-dc-ip", required=True, help="DC IP or hostname.")
     parser.add_argument("-d", "--domain", required=True, help="Domain.")
-    parser.add_argument("-u", required=True, help="Username.")
-    parser.add_argument("-p", default="defaultpass", help="Password.")
+    parser.add_argument("-u", "--username", required=True, help="Username.")
+    parser.add_argument("-p", "--password", default="defaultpass", help="Password.")
     parser.add_argument("-nthash", help="NT hash.")
     parser.add_argument("-timeout", type=int, default=10)
 
