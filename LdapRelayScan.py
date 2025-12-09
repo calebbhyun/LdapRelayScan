@@ -135,8 +135,8 @@ if __name__ == "__main__":
     opt = parser.parse_args()
 
     dc = opt.dc_ip
-    username = opt.domain + "\\" + opt.u
-    password = opt.p
+    username = opt.domain + "\\" + opt.username
+    password = opt.password
 
     if opt.method == "BOTH":
         if opt.nthash:
